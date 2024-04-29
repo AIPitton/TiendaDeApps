@@ -2,7 +2,7 @@
 
 npx react-native@latest init fwf --pm npm
 npm install redux react-redux @reduxjs/toolkit
-npm install react-native-screens
+npm install react-native-screens@3.29.0
 npm install react-native-safe-area-context
 npm install react-native-vector-icons
 npm install react-native-country-flag
