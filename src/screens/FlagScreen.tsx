@@ -339,178 +339,177 @@ const FlagScreen = () => {
   )
   return (
     <WrapScreen>
-      <View className="flex-row w-screen h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
-        <TouchableOpacity
-          className={
-            colorRed
-              ? 'flex-1  bg-r rounded-3xl mx-2 my-2 border-4'
-              : 'flex-1  bg-r rounded-3xl mx-2 my-2 border-4 border-r'
-          }
-          onPress={() => dispatch(setColorRed())}
-          ref={buttonRef}
-        />
-        <TouchableOpacity
-          className={
-            colorYellow
-              ? 'flex-1  bg-y rounded-3xl mx-2 my-2 border-4'
-              : 'flex-1  bg-y rounded-3xl mx-2 my-2 border-4 border-y'
-          }
-          onPress={() => dispatch(setColorYellow())}
-          ref={buttonRef}
-        />
-        <TouchableOpacity
-          className={
-            colorBlue
-              ? 'flex-1  bg-b rounded-3xl mx-2 my-2 border-4'
-              : 'flex-1  bg-b rounded-3xl mx-2 my-2 border-4 border-b'
-          }
-          onPress={() => dispatch(setColorBlue())}
-          ref={buttonRef}
-        />
-        <TouchableOpacity
-          className={
-            colorGreen
-              ? 'flex-1  bg-g rounded-3xl mx-2 my-2 border-4'
-              : 'flex-1  bg-g rounded-3xl mx-2 my-2 border-4 border-g'
-          }
-          onPress={() => dispatch(setColorGreen())}
-          ref={buttonRef}
-        />
-      </View>
-      <View className="flex-row w-screen h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
-        <TouchableOpacity
-          className={
-            colorBlack
-              ? 'flex-1  bg-B rounded-3xl mx-2 my-2 border-4 border-W'
-              : 'flex-1  bg-B rounded-3xl mx-2 my-2 border-4 border-B'
-          }
-          onPress={() => dispatch(setColorBlack())}
-          ref={buttonRef}
-        />
-        <TouchableOpacity
-          className={
-            colorPaleBlue
-              ? 'flex-1  bg-pb rounded-3xl mx-2 my-2 border-4'
-              : 'flex-1  bg-pb rounded-3xl mx-2 my-2 border-4 border-pb'
-          }
-          onPress={() => dispatch(setColorPaleBlue())}
-          ref={buttonRef}
-        />
-        <TouchableOpacity
-          className={
-            colorWhite
-              ? 'flex-1  bg-W rounded-3xl mx-2 my-2 border-4'
-              : 'flex-1  bg-W rounded-3xl mx-2 my-2 border-4 border-W'
-          }
-          onPress={() => dispatch(setColorWhite())}
-          ref={buttonRef}
-        />
-        <TouchableOpacity
-          className={
-            colorOther
-              ? 'flex-1 rounded-2xl mx-2 my-2 marker:border-4 border-W'
-              : 'flex-1 rounded-3xl mx-2 my-2 border-4 border-tr'
-          }
-          onPress={() => dispatch(setColorOther())}
-          ref={buttonRef}
-        >
-          <LinearGradient
-            colors={['#FF0000', '#FFFF00', '#008000', '#0000FF']}
-            className="flex-1 rounded-2xl"
+      <View className="sm:flex-row">
+        <View className="flex-row h-14 sm:h-14 md:h-32 lg:h-36 xl:h-40 sm:w-1/2">
+          <TouchableOpacity
+            className={
+              colorRed
+                ? 'flex-1  bg-r rounded-3xl mx-2 my-2 border-4'
+                : 'flex-1  bg-r rounded-3xl mx-2 my-2 border-4 border-r'
+            }
+            onPress={() => dispatch(setColorRed())}
+            ref={buttonRef}
           />
-        </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              colorYellow
+                ? 'flex-1  bg-y rounded-3xl mx-2 my-2 border-4'
+                : 'flex-1  bg-y rounded-3xl mx-2 my-2 border-4 border-y'
+            }
+            onPress={() => dispatch(setColorYellow())}
+            ref={buttonRef}
+          />
+          <TouchableOpacity
+            className={
+              colorBlue
+                ? 'flex-1  bg-b rounded-3xl mx-2 my-2 border-4'
+                : 'flex-1  bg-b rounded-3xl mx-2 my-2 border-4 border-b'
+            }
+            onPress={() => dispatch(setColorBlue())}
+            ref={buttonRef}
+          />
+          <TouchableOpacity
+            className={
+              colorGreen
+                ? 'flex-1  bg-g rounded-3xl mx-2 my-2 border-4'
+                : 'flex-1  bg-g rounded-3xl mx-2 my-2 border-4 border-g'
+            }
+            onPress={() => dispatch(setColorGreen())}
+            ref={buttonRef}
+          />
+        </View>
+        <View className="flex-row  h-14 sm:h-14  md:h-32 lg:h-36 xl:h-40 sm:w-1/2">
+          <TouchableOpacity
+            className={
+              colorBlack
+                ? 'flex-1  bg-B rounded-3xl mx-2 my-2 border-4 border-W'
+                : 'flex-1  bg-B rounded-3xl mx-2 my-2 border-4 border-B'
+            }
+            onPress={() => dispatch(setColorBlack())}
+            ref={buttonRef}
+          />
+          <TouchableOpacity
+            className={
+              colorPaleBlue
+                ? 'flex-1  bg-pb rounded-3xl mx-2 my-2 border-4'
+                : 'flex-1  bg-pb rounded-3xl mx-2 my-2 border-4 border-pb'
+            }
+            onPress={() => dispatch(setColorPaleBlue())}
+            ref={buttonRef}
+          />
+          <TouchableOpacity
+            className={
+              colorWhite
+                ? 'flex-1  bg-W rounded-3xl mx-2 my-2 border-4'
+                : 'flex-1  bg-W rounded-3xl mx-2 my-2 border-4 border-W'
+            }
+            onPress={() => dispatch(setColorWhite())}
+            ref={buttonRef}
+          />
+          <TouchableOpacity
+            className={
+              colorOther
+                ? 'flex-1  bg-o rounded-3xl mx-2 my-2 border-4  border-o'
+                : 'flex-1  bg-o rounded-3xl mx-2 my-2 border-4 border-W'
+            }
+            onPress={() => dispatch(setColorOther())}
+            ref={buttonRef}
+          />
+        </View>
       </View>
-      <View className="flex-row w-screen h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
-        <TouchableOpacity
-          className={
-            canton
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setCanton())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Canton</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          className={
-            star
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setStar())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Star</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          className={
-            sun
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setSun())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Sun</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          className={
-            moon
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setMoon())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Moon</Text>
-        </TouchableOpacity>
-      </View>
-      <View className="flex-row w-screen h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
-        <TouchableOpacity
-          className={
-            circle
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setCircle())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Circle</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          className={
-            triangle
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setTriangle())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Triangle</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          className={
-            cross
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setCross())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Cross</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          className={
-            wave
-              ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
-              : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
-          }
-          onPress={() => dispatch(setWave())}
-          ref={buttonRef}
-        >
-          <Text className="text-xl">Wave</Text>
-        </TouchableOpacity>
+      <View className="sm:flex-row">
+        <View className="flex-row h-14 sm:h-14 md:h-32 lg:h-36 xl:h-40 sm:w-1/2">
+          <TouchableOpacity
+            className={
+              canton
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setCanton())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Canton</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              star
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setStar())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Star</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              sun
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setSun())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Sun</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              moon
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setMoon())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Moon</Text>
+          </TouchableOpacity>
+        </View>
+        <View className="flex-row h-14 sm:h-14 md:h-32 lg:h-36 xl:h-40 sm:w-1/2">
+          <TouchableOpacity
+            className={
+              circle
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setCircle())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Circle</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              triangle
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setTriangle())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Triangle</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              cross
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setCross())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Cross</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className={
+              wave
+                ? 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 justify-center items-center'
+                : 'flex-1  bg-or rounded-3xl mx-2 my-2 border-4 border-or justify-center items-center'
+            }
+            onPress={() => dispatch(setWave())}
+            ref={buttonRef}
+          >
+            <Text className="text-xl">Wave</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       <FlatList
