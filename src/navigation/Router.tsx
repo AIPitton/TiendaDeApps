@@ -4,9 +4,7 @@ const Tab = createMaterialTopTabNavigator()
 function Router() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Flags" component={FlagScreen} />
-      <Tab.Screen name="Search" component={FlagScreen} />
-      <Tab.Screen name="Language" component={FlagScreen} />
+      <Tab.Screen name="Fun  With  Flags" component={FlagScreen} />
     </Tab.Navigator>
   )
 }
