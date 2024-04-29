@@ -1,4 +1,4 @@
-package com.fwf
+package react.native.top
 
 import android.app.Application
 import com.facebook.react.PackageList
