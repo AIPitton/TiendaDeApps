@@ -16,7 +16,7 @@ npm install @react-navigation/material-top-tabs react-native-tab-view
 npm install react-native-pager-view
 npm install react-native-linear-gradient
 npm install -g react-native-rename
-npx react-native-rename fwf -b react.native.top
+npx react-native-rename "Fun With Flags" -b react.native.top
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
