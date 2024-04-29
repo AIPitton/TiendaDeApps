@@ -413,8 +413,8 @@ const FlagScreen = () => {
           <TouchableOpacity
             className={
               colorOther
-                ? 'flex-1  bg-o rounded-3xl mx-2 my-2 border-4  border-o'
-                : 'flex-1  bg-o rounded-3xl mx-2 my-2 border-4 border-W'
+                ? 'flex-1  bg-o rounded-3xl mx-2 my-2 border-4 border-W'
+                : 'flex-1  bg-o rounded-3xl mx-2 my-2 border-4 border-o'
             }
             onPress={() => dispatch(setColorOther())}
             ref={buttonRef}
