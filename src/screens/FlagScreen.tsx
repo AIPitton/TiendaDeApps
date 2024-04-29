@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Router from './src/navigation/Router'
 
-const App = () => {
-  return <Router />
+const FlagScreen = () => {
+  return (
+    <View>
+      <Text>FlagScreen</Text>
+    </View>
+  )
 }
 
-export default App
+export default FlagScreen
 
 const styles = StyleSheet.create({})

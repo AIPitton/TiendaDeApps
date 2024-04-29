@@ -1,3 +1,21 @@
+# Used Commands
+
+npx react-native@latest init fwf --pm npm
+npm install redux react-redux @reduxjs/toolkit
+npm install react-native-screens
+npm install react-native-safe-area-context
+npm install react-native-vector-icons
+npm install react-native-country-flag
+npm install nativewind
+npm install --dev tailwindcss@3.3.2
+npx tailwindcss init
+npx tailwindcss build
+npm install @react-navigation/native
+npm install react-native-screens react-native-safe-area-context
+npm install @react-navigation/material-top-tabs react-native-tab-view
+npm install react-native-pager-view
+npm install react-native-linear-gradient
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
