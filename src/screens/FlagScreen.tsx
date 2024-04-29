@@ -408,12 +408,17 @@ const FlagScreen = () => {
         <TouchableOpacity
           className={
             colorOther
-              ? 'flex-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl mx-2 my-2 border-4 border-W'
-              : 'flex-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl mx-2 my-2 border-4 border-o'
+              ? 'flex-1 rounded-2xl mx-2 my-2 marker:border-4 border-W'
+              : 'flex-1 rounded-3xl mx-2 my-2 border-4 border-tr'
           }
           onPress={() => dispatch(setColorOther())}
           ref={buttonRef}
-        />
+        >
+          <LinearGradient
+            colors={['#FF0000', '#FFFF00', '#008000', '#0000FF']}
+            className="flex-1 rounded-2xl"
+          />
+        </TouchableOpacity>
       </View>
       <View className="flex-row w-screen h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
         <TouchableOpacity
