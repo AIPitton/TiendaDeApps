@@ -17,6 +17,7 @@ npm install react-native-pager-view
 npm install react-native-linear-gradient
 npm install -g react-native-rename
 npx react-native-rename "Fun With Flags" -b react.native.top
+npm install --save-dev @types/react-native-vector-icons
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 

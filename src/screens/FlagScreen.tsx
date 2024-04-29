@@ -5,6 +5,10 @@ import CountryFlag from 'react-native-country-flag'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../app/store'
 import LinearGradient from 'react-native-linear-gradient'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+
 import {
   setColorRed,
   setColorBlue,
@@ -428,7 +432,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setCanton())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Canton</Text>
+            <FontAwesome5 name="flag-usa" size={22} />
           </TouchableOpacity>
           <TouchableOpacity
             className={
@@ -439,7 +443,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setStar())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Star</Text>
+            <Ionicons name="star" size={22} />
           </TouchableOpacity>
           <TouchableOpacity
             className={
@@ -450,7 +454,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setSun())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Sun</Text>
+            <MaterialIcons name="sunny" size={22} />
           </TouchableOpacity>
           <TouchableOpacity
             className={
@@ -461,7 +465,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setMoon())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Moon</Text>
+            <Ionicons name="moon" size={22} />
           </TouchableOpacity>
         </View>
         <View className="flex-row h-14 sm:h-14 md:h-32 lg:h-36 xl:h-40 sm:w-1/2">
@@ -474,7 +478,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setCircle())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Circle</Text>
+            <FontAwesome5 name="circle" size={22} />
           </TouchableOpacity>
           <TouchableOpacity
             className={
@@ -485,7 +489,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setTriangle())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Triangle</Text>
+            <Ionicons name="triangle" size={22} />
           </TouchableOpacity>
           <TouchableOpacity
             className={
@@ -496,7 +500,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setCross())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Cross</Text>
+            <FontAwesome5 name="cross" size={22} />
           </TouchableOpacity>
           <TouchableOpacity
             className={
@@ -507,7 +511,7 @@ const FlagScreen = () => {
             onPress={() => dispatch(setWave())}
             ref={buttonRef}
           >
-            <Text className="text-xl">Wave</Text>
+            <MaterialIcons name="waves" size={22} />
           </TouchableOpacity>
         </View>
       </View>
