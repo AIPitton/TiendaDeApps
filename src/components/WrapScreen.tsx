@@ -25,7 +25,7 @@ const AppScreen = ({
           animated={true}
           backgroundColor={COLORS.primary}
         /> */}
-        <SafeAreaView className="h-screen">{children}</SafeAreaView>
+        <SafeAreaView className="h-full">{children}</SafeAreaView>
       </ImageBackground>
     </>
   )
