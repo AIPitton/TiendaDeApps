@@ -4,6 +4,7 @@
 
 # Xcode
 #
+gradle.properties
 build/
 .vscode
 package-lock.json
